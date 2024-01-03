@@ -1,6 +1,6 @@
 
 class Node:
-    def __init__(self, data) -> None:
+    def __init__(self, data: object) -> None:
         self.data = data
         self.next = None
 
@@ -8,7 +8,7 @@ class Queue:
     def __init__(self) -> None:
         self.front = self.rear = None
 
-    def enqueue(self, item) -> None:
+    def enqueue(self, item: object) -> None:
         temp = Node(item)
 
         # if queue is empty, then new node is front and rear both
