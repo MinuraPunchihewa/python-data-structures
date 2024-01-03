@@ -11,4 +11,9 @@ A few other operations that may be supported are:
 - Size: return the number of elements in the Queue.
 - IsEmpty: return True if the Queue is empty, False otherwise.
 
+There are several ways to implement a Queue including:
+- List-based Queue
+- Stack-based Queue
+- Linked List-based (Node-based) Queue
+
 ## LeetCode Problems
