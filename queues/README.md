@@ -12,7 +12,7 @@ A few other operations that may be supported are:
 - IsEmpty: return True if the Queue is empty, False otherwise.
 
 There are several ways to implement a Queue including:
-- List-based Queue
+- Simple List-based Queue
 - Stack-based Queue
 - Linked List-based (Node-based) Queue
 
