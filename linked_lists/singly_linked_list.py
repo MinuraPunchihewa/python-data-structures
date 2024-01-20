@@ -29,12 +29,16 @@ class SLL:
 
     def is_empty(self):
         """Returns True if the Linked List is empty. Otherwise, returns False."""
-        return self.head is None  # self.head == None
+        
+        return self.head is None
 
     def add_front(self, new_data):
         """Add a Node whose data is the new_data argument to the front of the Linked List."""
 
-        pass
+        temp = SLLNode(new_data)
+        temp.set_next(self.head)
+
+        self.head = temp
 
     def size(self):
         """Traverses the Linked List and returns an integer value representing the number of nodes in the Linked List.
