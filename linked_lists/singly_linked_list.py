@@ -29,7 +29,7 @@ class SLL:
 
     def is_empty(self):
         """Returns True if the Linked List is empty. Otherwise, returns False."""
-        
+
         return self.head is None
 
     def add_front(self, new_data):
@@ -46,7 +46,17 @@ class SLL:
         The time complexity is O(n) because every Node in the Linked List must be visited in order to calculate the size of the Linked List.
         """
 
-        pass
+        if self.head is None:
+            return 0
+        
+        size = 0
+        
+        current = self.head
+        while current is not None:
+            size += 1
+            current = current.get_next()
+
+        return size
 
     def search(self, data):
         """Traverses the Linked List and returns True if the data searched for is present in one of the Nodes. Otherwise, it returns False.
